@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./main.css">
+    <script src="connection.js"></script>
+
+    <title> Juan Pablo Barón Portfolio</title>
+
+</head>
+
+<body>
+    <div class="hero">
+        <!-- HEADER -->
+        <div class="header" id="header_letter">
+            <ul class="nav justify-content-end pt-3">
+                <li class="nav-item ">
+                    <a class="nav-link  mx-2" aria-current="page" href=""
+                    style="background: rgba(0,0,0,0);border-color:rgba(0,0,0,0) ;color:rgb(255, 255, 255);">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="#socialnetworks"
+                    style="background: rgba(0,0,0,0);border-color:rgba(0,0,0,0) ;color:rgb(255, 255, 255);"> Me </a>
+                </li>
+            </ul>
+        </div>
+        <!-- TYPING TITLE -->
+        <div class="container text-center mt-5 mb-3">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div id="typed" class="typed"></div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <!-- ABOUT ME SECTION -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="container col-8 ">
+                    <img src="./pics/jp.jpg" class="mx-auto d-block rounded" id="mePicture">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 text-center">
+                    <br>
+                    <p>
+                        Hey there! My name is Juan Pablo Barón and I'm a systems engineering student at Universidad de 
+                        Los Andes.
+                        I'm a programming enthusiastic, that knows how to work on groups very well, and
+                        also loves new challenges and adventures to come to change the world!
+                        Know how to code in <b>Python</b>, <b>Java</b> and <b>JavaScript</b> (focused on software development) for 
+                        back-end and front-end. Also a F1 and soccer lover!
+                        <b>Contact me if you're interested to work in future projects!</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <img src="./pics/dream.png" class="center-dream">
+        <hr>
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-lg-11">
+            <h2 id="subtitle">My abilities:</h2>
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-2 col-lg-3">
+
+
+        </div>
+        <div class="col-8 col-lg-6">
+
+
+            <p style="text-align: justify;padding-top: 7vh;font-size: 2.5vh;color: rgb(0, 0, 0);">I'm very skilled
+                to work on groups, that's because of my leadership, nobility and my ability to accept constructive
+                criticism and listen carefully to other people.
+                What I know in my programming skills are these fields: Python, Java, JavaScript, 
+                Flask, SQL Alchemy, HTML, CSS and bootstrap.
+                <br>
+                For my future things to learn are: React, C, C++, Go and Typescript.
+            </p>
+
+        </div>
+
+        <div class="col-2 col-lg-3">
+
+        </div>
+
+    </div>
+    <hr>
+
+    <div class="row " id="socialnetworks">
+        <div class="col-6 col-md-4">
+
+        </div>
+        <div class="col-6 col-md-4 text-center" style="padding-top: 5vh;">
+            <div class="center">
+                <h2 id="subtitle-contact">Social Media</h2>
+                <img style="width: 7vh;" onclick="linkedin()" src="./pics/linkedin.png">
+                <img style="width: 11vh;" onclick="git()" src="./pics/git.png">
+                <img style="width: 7vh;" onclick="instagram()" src="./pics/Instagram-Icon.png">
+                <p id="contact_gmail">Gmail: juanpa.baron18@gmail.com</p>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
