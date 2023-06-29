@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta tags for info for the webpage in order to have a more specific app -->
+        <!-- specifying the web encoding -->
+            <meta charset="UTF-8">
+
+        <!-- change web page width to device size automatically -->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- importing bootstrap for framework style -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        
+        <!-- importing css file to style html doc -->
+            <link rel="stylesheet" href="main.css">
+
+        <!-- importing the javascript file for utility functions that're used in the front-end -->
+            <script defer src="./js/connection.js"></script>
+        
+        <!-- web page info -->
+            <meta name="description" content="Portfolio of Juan Pablo Barón to show my abilities and skills">
+            <meta name="keywords" content="portfolio, programming, software engineering, dreams, success, ideas">
+            <meta name="author" content="Juan Pablo Barón Sandoval">
+        
+        <!-- google fonts -->
+            <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Heebo:wght@300;400&display=swap" rel="stylesheet">
+        
+        <!-- refresh the webpage in certain time of seconds -->
+            <meta http-equiv="refresh" content="900">
+
+    <!-- Web title -->
+    <title> Juan Pablo Barón Portfolio</title>
+
+</head>
+
+<body>
+<!-- navbar for main title and sections -->
+    <div id="nav_bar">
+        <!-- navbar main content -->
+            <nav class="navbar navbar-expand-lg fixed-top bg-dark" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="." id="title">
+                        <h1 class="display-6 justify-content-center my-1">Portfolio Juan Pablo Barón</h1>
+                    </a>
+            
+                    <!-- toggle button for mobile nav -->        
+                    <button class="navbar-toggler" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+                            aria-controls="navbarNavAltMarkup" aria-expanded="false" 
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <!-- navbar links -->
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" style="margin-left: auto;">
+                        <a class="nav-link active" aria-current="page" href="#introduction">Me</a>
+                        <a class="nav-link" href="#motivational_phrase#1">Abilities</a>
+                        <a class="nav-link" href="#motivational_phrase#2">Projects</a>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+    </div>
+  
+<!-- introduction to the web -->
+    <!-- the introduction part has an inline css property of margin-top
+    in order to dont hide the title, this is because the navbar is fixed top,
+    so it makes the viewport to ignore the navbar and the introduction
+    section to start at the beginning; as if the navbar didnt exist -->
+    
+    <div id="introduction" style="margin-top: 5em;">
+        <!-- TYPING TITLE -->
+            <div id="writing_title" class="container-lg text-center">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div id="typed" class="typed"></div>
+                        <hr>    
+                    </div>
+                </div>
+            </div>
+        <!-- photo of user and text describing it-->
+            <div class="container-lg my-2">
+                <div class="row justify-content-center align-items-center">
+                    <!-- photo of user responsive, that when the viewport its
+                        large, it has a margin to separate it from the text -->
+                        <div class="col-8 col-lg-5 col-xl-4 me-xl-5">
+                            <img src="./pics/jp.jpg" class="hidden_img rounded mx-auto d-block shadow" 
+                            alt="Photograph of Juan Pablo, a (future) professional 
+                            full stack developer featured in the portfolio." 
+                            id="mePicture">
+                        </div>
+                    <!-- text for describing user-->
+                    <div class="col-8 col-lg-5 col-xl-4 ms-lg-5 ms-xl-5 text-center">
+                        <p class="text_about_me hidden">
+                            Hey there! My name is <b>Juan Pablo Barón</b> and I'm a <b>systems
+                            engineering student at Universidad de Los Andes</b>. I'm a programming
+                            enthusiastic, that knows how to work on groups very well, and also
+                            loves new challenges and adventures to come to change the world!
+                            Know how to code in <b>Python</b>, <b>Java</b> and <b>JavaScript</b> (focused 
+                            on software development) for back-end and front-end. Also a F1 and soccer lover!
+                            Contact me if you're interested to work in future projects!
+                        </p>
+                    </div>
+                </div>
+            </div>
+          
+          
+          
+    </div>
+  
+  
+<!-- inspirational phrase #1 -->
+    <div id="motivational_phrase#1">
+        <div class="container-fluid text-center bg-dark container_phrase">
+            <div class="row justify-content-center">
+                <div class="col-12 p-2">
+                   <p class="motivational_phrase">
+                    "Stay hungry .
+                    <br>Stay foolish !"
+                    <sub id="author_reference"><i>- Steve Jobs</i></sub>
+                   </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- abilities section -->
+<div id="abilities">
+
+    <!-- title of abilities section-->
+        <div class="container-fluid">
+            <div class="row justify-content-center mt-4 ">
+                <div class="col-8 text-center mt-3">
+                    <h3><b>Abilities</b></h3>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    <!-- displaying content of abilities-->
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center mt-3">
+            <div class=" col-sm-7 col-9 col-lg-4 col-xl-4 text-center">
+
+                <!-- start carousel -->
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    
+                    <!-- cards section of the carousel -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="5000">
+                        <!-- first card python -->
+                            <div class="card text-bg-dark mb-3 w-100">
+                                <div class="card-header fw-bold">Python</div>
+                                <img src="./pics/python_logo.png" class="picture_card py-2" alt="...">
+                                <div class="card-body">
+                                <p class="card-text pb-2">
+                                    Experience with numpy, pandas, data structures and algorithms,
+                                    flask, web development, sqlalchemy and Django(soon). 
+                                </p>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <!-- second card java -->
+                            <div class="card text-bg-dark mb-3 w-100">
+                                <div class="card-header fw-bold">Java</div>
+                                <img src="./pics/java_logo.png" class="picture_card py-3" alt="...">
+                                <div class="card-body">
+                                <p class="card-text pb-2">
+                                    Experience with OOP for back-end, 
+                                    Java Swing(GUI), hoping to know 
+                                    databases for java soon.
+                                </p>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <!-- third card javascript -->
+                        <div class="card text-bg-dark mb-3 w-100">
+                            <div class="card-header fw-bold">Javascript</div>
+                            <img src="./pics/javascript_logo.png" class="picture_card py-3" alt="...">
+                            <div class="card-body">
+                            <p class="card-text pb-2">
+                                Experienced in developing websites with innovative
+                                tools to enhance the university experience.
+                                Recently began learning React and Angular.
+                            </p>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <!-- fourth card html+css -->
+                        <div class="card text-bg-dark mb-3 w-100">
+                            <div class="card-header fw-bold">HTML & CSS</div>
+                            <img src="./pics/html-css-removebg-preview.png" class="picture_card py-3" alt="...">
+                            <div class="card-body">
+                            <p class="card-text pb-2">
+                                Experienced in developing front-end websites,
+                                including this one. Trying to get more advanced but
+                                very good with bootstrap! Also very talented for html and css. 
+                            </p>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <!-- fifth card github -->
+                        <div class="card text-bg-dark mb-3 w-100">
+                            <div class="card-header fw-bold">Github</div>
+                            <img src="./pics/github.png" class="picture_card py-3" alt="...">
+                            <div class="card-body">
+                            <p class="card-text pb-2">
+                                Experienced with github. 
+                                Commits, merge, push, pull, fetch,
+                                branches, repos and organizations. 
+                            </p>
+                            </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <!-- end carousel -->
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- inspirational phrase #2 -->
+<div id="motivational_phrase#2">
+    <div class="container-fluid text-center bg-dark container_phrase mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 p-2">
+               <p class="motivational_phrase">
+                "The only strategy that is <br>
+                guaranteed to fail is not taking risks."
+                <sub id="author_reference"><i>- Mark Zuckerberg</i></sub>
+               </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- projects section -->
+<div id="projects">
+
+    <!-- title of abilities section-->
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-4 ">
+            <div class="col-8 text-center mt-3">
+                <h3><b>Projects</b></h3>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-lg my-2">
+        <div class="row justify-content-center my-2">
+            <!-- titles -->
+            <div class="col-8 col-lg-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <!-- first project name -->
+                <a class="list-group-item list-group-item-action active list-group-item-dark" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+                    Free Room Webpage
+                </a>
+
+                <!-- seccond project name -->
+                <a class="list-group-item list-group-item-action list-group-item-dark" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+                    UniGo
+                </a>
+
+                <!-- third project name -->
+                <a class="list-group-item list-group-item-action list-group-item-dark" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">
+                    MyPortfolio
+                </a>
+
+                <!-- fourth project name -->
+                <a class="list-group-item list-group-item-action list-group-item-dark" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
+                    Uniandes Projects
+                </a>
+              </div>
+            </div>
+
+            <!-- content of each project -->
+            <div class="col-10 col-lg-8 text-center border-dark-subtle shadow p-3 rounded container_for_project_description">
+              <div class="tab-content" id="nav-tabContent">
+                <!-- first element -->
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    <p class="project-text-description">
+                        <b>"Free Room Webpage"</b> is a university tool that helps students at Uniandes
+                        identify available classrooms for various activities. It was developed in late 2022
+                        and released in the 2023-1 semester. <b>Future plans include integrating it into UniGo</b>,
+                        a project with multiple university tools.
+                    </p>
+                    <video controls src="./pics/free-room_experience-phone.mp4" class="free-room-video"></video>
+                </div>
+
+                <!-- second element -->
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    <p class="project-text-description">
+                        <b>UniGo</b> is a comprehensive website designed specifically for university students, offering a
+                        range of convenient tools to enhance their daily lives. While currently in its initial stage,
+                        UniGo <b>already provides two essential functionalities: "Free Room" and "Reservation Center"</b>.
+                        With plans to launch its <b>first version in the 2023-2 semester, UniGo aims to expand its
+                        offerings to include more than five tools</b> tailored to the needs of university students.
+                    </p>
+                </div>
+
+                <!-- third element -->
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    <p class="project-text-description">
+                        This website was entirely created by me, with the assistance of Bootstrap 5 and YouTube tutorials.
+                        It is <b>responsive</b> and <b>could be helpful for others who wish to use this repository as a template
+                        for future front-end projects</b>.
+                    </p>
+                </div>
+
+                <!-- fourth element -->
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                    <p class="project-text-description">
+                        I have worked on several programming projects, showcasing my skills in <b>Python and Java</b>. In Python, I have
+                        successfully developed basic projects using libraries such as <b>NumPy and Pandas</b>. I am adept at working with
+                        <b>data structures and algorithms</b>, effectively manipulating and analyzing them.
+
+                        <br>
+
+                        In Java, I have focused on <b>object-oriented software development and design patterns</b>. I have created projects
+                        that demonstrate my proficiency in utilizing object-oriented concepts and implementing design patterns effectively.
+                        Additionally, I have experience working with <b>graphical user interfaces (GUIs) in Java</b>, particularly using Java GUI (Swing).
+
+                        <br>
+
+                        Overall, my programming experience encompasses a range of projects, from data manipulation and analysis using Python
+                        libraries to object-oriented programming and GUI development in Java.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+</div>
+
+
+<footer class="bg-dark py-3 pb-1 mt-5" id="footer">
+    <div class="container-fluid text-center">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p class="contact_me">
+                    Contact me ! 
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+                <div class="col-xl-2 col-lg-3 col-4 col-sm-6">
+                    <a href="https://www.linkedin.com/in/juan-pablo-baron-sandoval-a17b51262/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                        <br>
+                        <p id="text_for_app_contact" style="display: inline;">
+                            LinkedIn
+                        </p>
+                    </a>
+                                
+                </div>
+                <div class="col-xl-2 col-lg-3 col-4 col-sm-6">
+                    <a href="https://github.com/juanpablob11" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        <br>
+                        <p id="text_for_app_contact" style="display: inline;">
+                            GitHub
+                        </p>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-4 col-sm-6 mail-column">
+                    <a href="mailto:juanpa.baron18@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                        </svg>
+                        <br>
+                        <p id="text_for_app_contact" style="display: inline;">
+                            Gmail
+                        </p>
+                    </a>
+                </div>
+        </div>
+        
+        <div class="row justify-content-center mt-2">
+            <div class="col-12 text-center">
+                <p class="Copyright">
+                    © 2023 Copyright 
+                </p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

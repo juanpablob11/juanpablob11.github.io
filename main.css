@@ -1,0 +1,178 @@
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#mePicture {
+  max-width: 200px;
+}
+
+.typed {
+  font-family: tahoma, verdana, arial, sans-serif;
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+.text_about_me{
+  font-family: 'Heebo', sans-serif;
+}
+
+.motivational_phrase{
+  font-family: 'Fasthand', cursive;
+  color:white;
+}
+
+.picture_card {
+  height: 10em;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.bi-linkedin, .bi-github, .bi-envelope, .bi-instagram {
+  color: white;
+}
+
+
+a:hover svg,
+a:hover #text_for_app_contact {
+    color: rgb(168, 21, 21);
+}
+
+a:active svg,
+a:active #text_for_app_contact {
+    color: rgb(255, 0, 0);
+}
+
+a{
+  text-decoration: none;
+}
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+p{
+  margin-bottom: 0.5rem;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .typed {
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 4vh;
+    font-weight: bold;
+}
+#title h1{
+  font-size: 1.6rem;
+}
+
+.container_phrase{
+  margin-top: 1.2em;
+  font-size: 2.2em;
+}
+
+.text_about_me{
+  margin-top: 1.3em;
+}
+
+#author_reference{
+  font-size: 0.6em;
+}
+.contact_me{
+  font-size: 2em;
+  font-family: 'Fasthand', cursive;
+  color:white;
+  margin-bottom: 0.5rem;
+}
+#text_for_app_contact{
+  font-family: 'Heebo', sans-serif;
+  color:white;
+  font-size: 1rem;
+}
+.Copyright{
+  font-size: 1.1em;
+  font-family: 'Fasthand', cursive;
+  color:white;
+}
+
+.free-room-video {
+  width: 30%;
+}
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .typed {
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 2.7vh;
+    font-weight: bold;
+}
+#title h1{
+  font-size: 1.4rem;
+}
+.text_about_me{
+  margin-top: 1.3em;
+}
+.container_phrase{
+  margin-top: 1em;
+  font-size: 1.8em;
+}
+#author_reference{
+  font-size: 0.7em;
+}
+
+.card-header{
+  font-size: 1.5em;
+}
+
+.contact_me{
+  font-size: 2em;
+  font-family: 'Fasthand', cursive;
+  color:white;
+}
+
+.Copyright{
+  font-size: 1rem;
+  font-family: 'Fasthand', cursive;
+  color:white;
+}
+#text_for_app_contact{
+  font-family: 'Heebo', sans-serif;
+  color:white;
+  font-size: 0.7em;
+}
+
+.container_for_project_description{
+  margin-top: 2em;
+}
+.project-text-description{
+  font-family: 'Heebo', sans-serif;
+  font-size: 1em;
+}
+
+.free-room-video {
+  width: 60%;
+}
+}
+
+/* animations for principal pic and text describing me */
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.hidden_img{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
